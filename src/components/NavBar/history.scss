@@ -1,0 +1,52 @@
+.history-box{
+  height: 300px;
+  overflow-y: scroll;
+  .history-list{
+    // padding-bottom: 30px;
+    .empty-box{
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      color: #788AA0;
+      padding: 50px 0;
+    }
+    .item{
+      display: flex;
+      align-items: center;
+      margin: 0 15px 10px 15px;
+      padding: 12px 15px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 5px;
+      border: 1px solid rgba(1,249,223,0.1);
+      .time{
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 16px;
+        width: 80px;
+        display: inline-block;
+        span{
+          display: block;
+        }
+        .mmm{
+          margin-top: 4px;
+          color: rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+      }
+      .blockNumber{
+        width: 70px;
+        color: #FFFFFF;
+      }
+      .income{
+        flex: 1;
+        text-align: right;
+        &.green{
+          color: #00C253;
+        }
+        &.red{
+          color: #F03737;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.header-box{
+  .header-top{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-logo{
+      height: 44px;
+      display: flex;
+      align-items: center;
+      .menu{
+        padding-left: 15px;
+        padding-right: 12px;
+        height: 100%;
+        line-height: 44px;
+        display: inline-block;
+        img{
+          width: 14px;
+          vertical-align: middle;
+        }
+      }
+      .logo{
+        img{
+          width: 88px;
+          vertical-align: top;
+        }
+      }
+    }
+    .user-connect{
+      margin-right: 15px;
+    }
+    
+  }
+}
+.menu-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  img{
+    width: 100px;
+    height: auto;
+  }
+  .menu-close{
+    font-size: 16px;
+    color: #fff;
+  }
+}
+.menu-drawer{
+  :global{
+    .ant-drawer-content{
+      background: #122227;
+      .ant-drawer-header{
+        padding: 0;
+      }
+      .ant-drawer-body{
+        padding: 20px 0;
+      }
+    }
+  }
+  .menu-top{
+    height: 60px;
+    background: #040F13;
+  }
+  .menu-list{
+    overflow: hidden;
+    li{
+      &.airdrop {
+        padding: 0 20px;
+        a{
+          height: 60px;
+          background: linear-gradient(270deg, #122227 0%, #075063 100%);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          img{
+            width: 36px;
+            height: auto;
+          }
+          span{
+            font-size: 15px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-left: 13px;
+          }
+        }
+      }
+      &.trading{
+        margin-top: 15px;
+      }
+      > a{
+        box-sizing: border-box;
+        display: inline-flex;
+        padding: 15px 26px;
+        align-items: center;
+        width: 100%;
+        img{
+          width: 16px;
+          height: auto;
+          margin-right: 10px;
+        }
+        span{
+          font-size: 15px;
+          font-weight: 300;
+          color: #FFFFFF;
+        }
+      }
+      
+    }
+  }
+}

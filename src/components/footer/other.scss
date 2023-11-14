@@ -1,0 +1,84 @@
+.airdrop-footer{
+  text-align: center;
+  position: relative;
+  padding-bottom: 80px;
+  /* &::before{
+    content: '';
+    position: absolute;
+    width: 100%;  
+    height: 1px;
+    background: linear-gradient(to right, rgba(18, 18, 20, 0), #6D6D6D, rgba(18, 18, 20, 0));
+    left: 0;
+    top: 0;
+  } */
+  img.binx{
+    width: 40px;
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+  .media-list{
+    li{
+      display: inline-block;
+      margin-right: 9px;
+      height: 23px;
+      a{
+        width: 23px;
+        height: 23px;
+        display: inline-block;
+        font-size: 0;
+        vertical-align: top;
+      }
+      &.twitter{
+        background: url('../../assets/img/home/twitter.png') no-repeat center;
+        background-size: cover;
+      }
+      &.telegram{
+        background: url('../../assets/img/home/telegram.png') no-repeat center;
+        background-size: cover;
+      }
+      &.discord{
+        background: url('../../assets/img/home/discord.png') no-repeat center;
+        background-size: cover;
+      }
+      &.m{
+        background: url('../../assets/img/home/m.png') no-repeat center;
+        background-size: cover;
+      }
+      &.youtube{
+        background: url('../../assets/img/home/youtube.png') no-repeat center;
+        background-size: cover;
+      }
+      &.github{
+        background: url('../../assets/img/home/github.png') no-repeat center;
+        background-size: cover;
+      }
+      &:hover{
+        cursor: pointer;
+        &.twitter{
+          background: url('../../assets/img/home/twitter-a.png') no-repeat center;
+          background-size: cover;
+        }
+        &.telegram{
+          background: url('../../assets/img/home/telegram-a.png') no-repeat center;
+          background-size: cover;
+        }
+        &.discord{
+          background: url('../../assets/img/home/discord-a.png') no-repeat center;
+          background-size: cover;
+        }
+        &.m{
+          background: url('../../assets/img/home/m-a.png') no-repeat center;
+          background-size: cover;
+        }
+        &.youtube{
+          background: url('../../assets/img/home/youtube-a.png') no-repeat center;
+          background-size: cover;
+        }
+        &.github{
+          background: url('../../assets/img/home/github-a.png') no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

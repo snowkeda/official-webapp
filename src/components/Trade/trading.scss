@@ -1,0 +1,124 @@
+.investment-bg{
+  border: 1px solid #464961;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 12px;
+  margin: 10px 15px 12px 15px;
+  .investment-input{
+    width: 100%;
+    padding-left: 14px;
+    height: 42px;
+    line-height: 42px;
+    :global{
+      .ant-input-number-prefix{
+        font-size: 13px;
+        font-weight: 400;
+        color: #788AA0;
+      }
+      .ant-input-number-input{
+        height: 42px;
+        font-size: 14px;
+        color: #FFFFFF;
+        padding-right: 15px;
+        text-align: right;
+      }
+    }
+    
+  }
+}
+.h-l{
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+  position: relative;
+  .trade-block{
+    width: 165px;
+    .income{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      span{
+        font-size: 12px;
+        font-family: Outfit-Light, Outfit;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.5);
+        &:last-child{
+          font-size: 14px;
+          font-family: Outfit-Regular, Outfit;
+          font-weight: 400;
+          color: #FFFFFF;
+        }
+      }
+    }
+    .third-btn{
+      display: block;
+      height: auto;
+      border: 0;
+      color: #FFFFFF;
+      height: 75px;
+      width: 100%;
+      padding: 9px 0;
+      position: relative;
+      :global{
+        .ant-btn-loading-icon{
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+      p{
+        font-size: 18px;
+        font-family: Outfit-Bold, Outfit;
+        font-weight: bold;
+        color: #FFFFFF;
+        &.hl-btn{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::before{
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            width: 16px;
+            height: 20px;
+            background: url('../../assets/img/home/hl-icon.png') no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      &.green{
+        background: #00C253;
+        border-radius: 5px;
+      }
+      &.red{
+        background: #F03737;
+        border-radius: 5px;
+        p.hl-btn{
+          &::before{
+            transform: rotate(180deg) !important;
+          }
+        }
+      }
+    }
+  }
+  .approve-box{
+    position: absolute;
+    border-radius: 5px;
+    display: block;
+    width: 345px;
+    height: 80px;
+    margin: 25px 15px 0 15px;
+    left: 0;
+    padding: 0;
+    border: 0px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #0275F5 0%, #00A392 100%);
+    opacity: 1 !important;
+    &:active, &:hover{
+      color: #FFFFFF !important;
+    }
+  }
+}
